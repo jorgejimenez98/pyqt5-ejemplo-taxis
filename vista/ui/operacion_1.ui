@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>447</width>
+    <height>0</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Operación 1</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#btn_close:hover{
+background-color: rgb(85, 170, 0);
+}
+QPushButton#btn_close{
+color: rgb(0, 0, 0);
+font: italic 12pt &quot;Poor Richard&quot;;
+background-color: rgb(255, 255, 127);
+border-radius: 5px;
+}
+QPushButton#btn_mostrar:hover{
+background-color: rgb(85, 170, 0);
+}
+QPushButton#btn_mostrar{
+color: rgb(0, 0, 0);
+font: italic 12pt &quot;Poor Richard&quot;;
+background-color: rgb(255, 255, 127);
+border-radius: 5px;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: italic 13pt &quot;Poor Richard&quot;;</string>
+     </property>
+     <property name="title">
+      <string>Ingrese el código del viaje</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="1" rowspan="2">
+       <widget class="QWidget" name="widget" native="true"/>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font: italic 12pt &quot;Poor Richard&quot;;
+	color: rgb(255, 255, 255);
+border-radius: 10px;
+</string>
+        </property>
+        <property name="text">
+         <string>Códido de viaje</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="txt_codigo">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QWidget" name="widget_2" native="true">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="btn_mostrar">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="text">
+         <string>Calcular importe</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="btn_close">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="text">
+         <string>Cerrar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

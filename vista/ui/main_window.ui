@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>523</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Gabriola&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="3">
+     <widget class="QWidget" name="widget" native="true"/>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QWidget" name="widget_3" native="true"/>
+    </item>
+    <item row="1" column="2">
+     <widget class="QWidget" name="widget_2" native="true"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QWidget" name="widget_5" native="true"/>
+    </item>
+    <item row="2" column="1" rowspan="2" colspan="2">
+     <widget class="QWidget" name="widget_4" native="true"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+
+font: 16pt &quot;Poor Richard&quot;;
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>Programador: Jorge Jiménez Díaz</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivos">
+    <property name="title">
+     <string>Archivos</string>
+    </property>
+    <addaction name="ac_close"/>
+   </widget>
+   <widget class="QMenu" name="menuCRUD">
+    <property name="title">
+     <string>CRUD</string>
+    </property>
+    <addaction name="ac_viaje_local"/>
+    <addaction name="ac_viaje_ciudad"/>
+   </widget>
+   <widget class="QMenu" name="menuOperaciones">
+    <property name="title">
+     <string>Operaciones</string>
+    </property>
+    <addaction name="ac_op1"/>
+    <addaction name="ac_op2"/>
+    <addaction name="ac_op3"/>
+    <addaction name="ac_op4"/>
+    <addaction name="ac_op5"/>
+   </widget>
+   <addaction name="menuArchivos"/>
+   <addaction name="menuCRUD"/>
+   <addaction name="menuOperaciones"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="ac_close">
+   <property name="text">
+    <string>Cerrar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="ac_viaje_local">
+   <property name="text">
+    <string>Viaje Local</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="ac_viaje_ciudad">
+   <property name="text">
+    <string>Viaje fuera de la ciudad</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="ac_op1">
+   <property name="text">
+    <string>Determinar el importe de un viaje dado su código</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+1</string>
+   </property>
+  </action>
+  <action name="ac_op2">
+   <property name="text">
+    <string>Determinar el promedio de edades de los choferes que dieron viajes locales y pasaron por embotellamiento por una fecha dada</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+2</string>
+   </property>
+  </action>
+  <action name="ac_op3">
+   <property name="text">
+    <string>Determinar el porciento de los viajes locales que se hicieron por llamada al servicio de taxis</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+3</string>
+   </property>
+  </action>
+  <action name="ac_op4">
+   <property name="text">
+    <string>Determinar los datos del viaje local de mayor duración que se hizo en una fecha dada</string>
+   </property>
+   <property name="toolTip">
+    <string>Determinar los datos del viaje local de mayor duración que se hizo en una fecha </string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+4</string>
+   </property>
+  </action>
+  <action name="ac_op5">
+   <property name="text">
+    <string>Determinar el listado con los datos de los viajes hechos fuera de la ciudad sin habilitar el carro ordenado por la distancia recorrida</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+5</string>
+   </property>
+  </action>
+  <action name="ac_ayuda">
+   <property name="text">
+    <string>Acerca de ...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
